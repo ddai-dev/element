@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <el-radio-button  label="1">备选项</el-radio-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// 单个引入, 在 node_modules/element-ui/packages/ 打断点
+import ElRadioButton from "element-ui/packages/radio/src/radio-button.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+   ElRadioButton,
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
